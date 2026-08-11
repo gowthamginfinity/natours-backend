@@ -10,8 +10,10 @@
     "main": false
   },
   "scripts": {
+    "start": "node server.js",
     "start:dev": "nodemon server.js",
     "start:prod": "cross-env NODE_ENV=production nodemon server.js",
+    "build": "parcel build ./public/js/index.js --dist-dir ./public/dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:js": "parcel watch ./public/js/index.js --dist-dir ./public/dist",
     "build:js": "parcel build ./public/js/index.js --dist-dir ./public/dist"
